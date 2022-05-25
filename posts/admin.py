@@ -6,6 +6,6 @@ from . import models
 
 @admin.register(models.Post)
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ['author', 'title', 'body', 'created_at']
+    list_display = ['author', 'id', 'title', 'body', 'created_at']
     list_per_page = 10
     search_fields = ['title']
